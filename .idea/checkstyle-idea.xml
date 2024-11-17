@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CheckStyle-IDEA" serialisationVersion="2">
+    <checkstyleVersion>10.20.1</checkstyleVersion>
+    <scanScope>JavaOnly</scanScope>
+    <option name="thirdPartyClasspath" />
+    <option name="activeLocationIds">
+      <option value="32999cf5-4524-4ed8-ba5b-288e2c649dd4" />
+    </option>
+    <option name="locations">
+      <list>
+        <ConfigurationLocation id="bundled-sun-checks" type="BUNDLED" scope="All" description="Sun Checks">(bundled)</ConfigurationLocation>
+        <ConfigurationLocation id="bundled-google-checks" type="BUNDLED" scope="All" description="Google Checks">(bundled)</ConfigurationLocation>
+        <ConfigurationLocation id="32999cf5-4524-4ed8-ba5b-288e2c649dd4" type="INSECURE_HTTP_URL" scope="All" description="otus">https://raw.githubusercontent.com/OtusTeam/Spring/master/checkstyle.xml</ConfigurationLocation>
+      </list>
+    </option>
+  </component>
+</project>
