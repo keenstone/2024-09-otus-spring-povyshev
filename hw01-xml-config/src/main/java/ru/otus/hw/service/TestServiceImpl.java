@@ -17,10 +17,15 @@ public class TestServiceImpl implements TestService {
         ioService.printLine("");
         ioService.printFormattedLine("Please answer the questions below%n");
         List<Question> questions =  questionDao.findAll();
-        questions.forEach(question -> {
-            ioService.printLine("");
-            ioService.printLine(question.text());
-            question.answers().forEach(answer -> ioService.printLine(" - " + answer.text()));                    }
+        questions.forEach(processQuestion();
         );
+    }
+    private void processQuestion(Question question){
+        ioService.printLine("");
+        ioService.printLine(question.text());
+        question.answers().forEach(processAnswer(););
+    }
+    private void processAnswer(Answer answer){
+        ioService.printLine(" - " + answer.text())
     }
 }
