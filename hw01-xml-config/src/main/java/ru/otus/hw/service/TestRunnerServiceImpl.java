@@ -5,6 +5,7 @@ import ru.otus.hw.exceptions.QuestionReadException;
 
 @RequiredArgsConstructor
 public class TestRunnerServiceImpl implements TestRunnerService {
+    private final IOService ioService;
 
     private final TestService testService;
 
@@ -13,7 +14,7 @@ public class TestRunnerServiceImpl implements TestRunnerService {
         try {
             testService.executeTest();
         } catch (QuestionReadException e) {
-            System.out.println("Couldn't get questions. cannot be continued");
+            ioService.printLine("Couldn't get questions. cannot be continued");
         }
 
     }
