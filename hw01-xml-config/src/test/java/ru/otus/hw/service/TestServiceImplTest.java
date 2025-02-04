@@ -10,8 +10,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import ru.otus.hw.dao.QuestionDao;
 import ru.otus.hw.domain.Answer;
 import ru.otus.hw.domain.Question;
-import ru.otus.hw.service.IOService;
-import ru.otus.hw.service.TestServiceImpl;
+
 import java.util.Arrays;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.times;

@@ -10,9 +10,9 @@ public class TestRunnerServiceImpl implements TestRunnerService {
 
     @Override
     public void run() {
-        try{
+        try {
             testService.executeTest();
-        }catch (QuestionReadException e){
+        } catch (QuestionReadException e) {
             System.out.println("Couldn't get questions. cannot be continued");
         }
 

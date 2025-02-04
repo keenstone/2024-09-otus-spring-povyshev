@@ -20,12 +20,14 @@ public class TestServiceImpl implements TestService {
         List<Question> questions =  questionDao.findAll();
         questions.forEach(this::processQuestion);
     }
-    private void processQuestion(Question question){
+
+    private void processQuestion(Question question) {
         ioService.printLine("");
         ioService.printLine(question.text());
         question.answers().forEach(this::processAnswer);
     }
-    private void processAnswer(Answer answer){
+
+    private void processAnswer(Answer answer) {
         ioService.printLine(" - " + answer.text());
     }
 }
