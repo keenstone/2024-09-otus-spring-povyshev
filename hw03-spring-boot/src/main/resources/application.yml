@@ -1,4 +1,7 @@
 spring:
+  output:
+    ansi:
+      enabled: always
   messages:
     baseName: messages
     encoding: UTF-8
