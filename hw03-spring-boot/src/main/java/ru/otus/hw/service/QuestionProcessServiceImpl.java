@@ -22,9 +22,9 @@ public class QuestionProcessServiceImpl implements  QuestionProcessService {
     }
 
     private boolean getResult(Question question) {
-        var selectedAnswer = ioService.readIntForRangeWithPrompt(1,question.answers().size(),
-                String.format("Enter correct answer. Print digit in range 1-%s",question.answers().size()),
-                "Couldn't process such answer. Try again.");
+        var selectedAnswer = ioService.readIntForRangeWithPromptLocalized(1,question.answers().size(),
+                "QuestionProcessService.result.withRange.message",
+                "QuestionProcessService.result.withRange.error",question.answers().size());
         return checkAnswer(question, selectedAnswer);
     }
 
